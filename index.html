@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Techfest 2026 | IIT Bombay</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- opening transition: two doors that swing open in 3D -->
+  <div class="intro" id="intro">
+    <div class="door door-l"></div>
+    <div class="door door-r"></div>
+    <div class="intro-text">TECHFEST 2026</div>
+  </div>
+
+  <!-- background layers -->
+  <canvas id="bg"></canvas>
+  <canvas id="globe"></canvas>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <a href="#home" class="logo">TECHFEST<span>.</span></a>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#events">Events</a>
+      <a href="#register">Register</a>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section id="home" class="hero">
+    <div class="hero-text">
+      <p class="tag">IIT BOMBAY · MUMBAI</p>
+      <h1>Techfest <span class="gradient">2026</span></h1>
+      <p class="subtitle">An Aetherial Renaissance</p>
+      <p class="date">16 DECEMBER 2026</p>
+
+      <div class="countdown">
+        <div><b id="days">00</b><span>Days</span></div>
+        <div><b id="hours">00</b><span>Hours</span></div>
+        <div><b id="minutes">00</b><span>Minutes</span></div>
+        <div><b id="seconds">00</b><span>Seconds</span></div>
+      </div>
+
+      <div class="buttons">
+        <a href="#events" class="btn primary">Explore Events</a>
+        <a href="https://techfest.org/" target="_blank" rel="noopener" class="btn ghost">Official Website</a>
+      </div>
+      <p class="hint-line">click the globe · move your mouse · scroll</p>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section">
+    <h2>About <span class="gradient">Techfest</span></h2>
+    <div class="about-row">
+      <p class="lead">Techfest is the annual science and technology festival of IIT Bombay, held in Mumbai.</p>
+
+      <!-- 3D cube made only with CSS transforms -->
+      <div class="scene" id="cubeScene">
+        <div class="cube" id="cube">
+          <div class="face front">LEARN</div>
+          <div class="face back">BUILD</div>
+          <div class="face right">COMPETE</div>
+          <div class="face left">INNOVATE</div>
+          <div class="face top">WIN</div>
+          <div class="face bottom">REPEAT</div>
+        </div>
+        <p class="hint">drag to rotate</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- EVENTS -->
+  <section id="events" class="section">
+    <h2>Explore <span class="gradient">Techfest</span></h2>
+    <div class="grid" id="eventGrid"></div>
+  </section>
+
+  <!-- REGISTER -->
+  <section id="register" class="section center">
+    <h2>Be part of <span class="gradient">it</span></h2>
+    <a href="https://techfest.org/" target="_blank" rel="noopener" class="btn primary big">Visit Techfest.org</a>
+  </section>
+
+  <footer>© 2026 Techfest · IIT Bombay · Student project</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
